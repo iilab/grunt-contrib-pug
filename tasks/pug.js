@@ -61,7 +61,7 @@ module.exports = function(grunt) {
         options.filename = filepath;
 
         try {
-          var pug = f.orig.pug = require('pug');
+          var pug = f.orig.pug = require('jade');
           if (typeof data === 'function') {
             // if data is function, bind to f.orig, passing f.dest and f.src
             f.orig.data = data.call(f.orig, f.dest, f.src);
